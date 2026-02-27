@@ -1,0 +1,144 @@
+/*Variables del Root*/
+:root{
+--color-primario: #f4c430;
+--texto-primario: #f0eded;
+}
+
+/* Reset general del documento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos del nav-bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, #111, #222); /*Color degragado*/
+    color: var(--texto-primario);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    z-index: 1000;
+}
+/*Estilos del Logo en el Nav-bar*/
+.logo h2 {
+    color: var(--color-primario);
+}
+
+.logo span {
+    font-size: 12px;
+    display: block;
+}
+/*Estilos de los links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--texto-primario);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-primario);
+}
+/*Link de "Vida UCA" se mantiene siempre amarillo */
+.highlight {
+    color: var(--color-primario) !important;
+
+}
+
+/*Boton del Nav-Bar "Menú hamburguesa" */
+.menu-circle {
+    width: 45px;
+    height: 45px;
+    background: var(--color-primario);
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Hero Principal y contenido (imagen de fondo, texto) */
+.hero {
+    height: 100vh;
+    background: url('¿IMAGEN?') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 80px;
+}
+
+/* Texto encima de la imagen (Overlay) */
+.overlay-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px 50px;
+    border-radius: 10px;
+    color: var(--texto-primario);
+    text-align: left;
+    max-width: 500px;
+}
+
+.overlay-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+/* Links de redes sociales */
+.social {
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social a {
+    width: 35px;
+    height: 35px;
+    color: var(--texto-primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+/* POSIBLE BOTON
+.btn-info {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--color-primario);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn-info:hover {
+    background: white;
+}*/
+
+
+/* POSIBLES COLORES PARA FONDOS DE RRSS
+.instagram { background: #e1306c; }
+.facebook { background: #1877f2; }
+.linkedin { background: #0a66c2; }
+.youtube { background: #ff0000; } */
